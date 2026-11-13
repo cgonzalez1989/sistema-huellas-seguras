@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuellasSeguras - Reportar Rescate</title>
+</head>
+<body>
+    <header>
+        <h1>HuellasSeguras</h1>
+        <p>Registro de Nuevo Animal Rescatado</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar Rescate</a></li>
+            <li><a href="rescates.html">Casos Registrados</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulario de Ingreso de Caso</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Información del Rescate</legend>
+                    
+                    <p>
+                        <label for="titulo_caso">Título del caso o nombre provisional:</label><br>
+                        <input type="text" id="titulo_caso" name="titulo_caso" required placeholder="Ej. Cachorro callejero">
+                    </p>
+
+                    <p>
+                        <label for="categoria">Categoría:</label><br>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Seleccione una categoría</option>
+                            <option value="perros">Perros</option>
+                            <option value="gatos">Gatos</option>
+                            <option value="fauna_silvestre">Fauna Silvestre</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>Nivel de urgencia médica:</label><br>
+                        <input type="radio" id="urgencia_alta" name="urgencia" value="Alta" required>
+                        <label for="urgencia_alta">Alta</label>
+                        
+                        <input type="radio" id="urgencia_media" name="urgencia" value="Media">
+                        <label for="urgencia_media">Media</label>
+                        
+                        <input type="radio" id="urgencia_baja" name="urgencia" value="Baja">
+                        <label for="urgencia_baja">Baja</label>
+                    </p>
+
+                    <p>
+                        <label for="descripcion">Descripción detallada del estado en que se encontró:</label><br>
+                        <textarea id="descripcion" name="descripcion" rows="4" required placeholder="Describa el estado, lesiones o ubicación..."></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Registrar Caso</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HuellasSeguras. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
